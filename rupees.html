@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           
+            background-repeat: no-repeat;
+        
+        }
+        input{
+            margin-left: 500px;
+            height: 30px;
+            width: 200px;
+            background-color: white;
+        }
+        label{
+            margin-left: 500px;
+            color: brown
+        }
+
+        h1{
+            margin-left: 500px;
+           margin-right: 770px;
+            color: white;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Length Converter</h1>
+    <label for="convert rupees">US Doller</label><br><br>
+    <input type="number"  id="no1" onkeyup="calculate()" placeholder="convert rupees"><br><br>
+    <label for="indian rupees">Indian rupees</label><br><br>
+    <input type="number"  id="no2" placeholder="indian rupees"><br><br>
+    <label for="indian rupees">Arab Emirets</label><br><br>
+    <input type="number"  id="no3" placeholder="Arab Emirets"><br><br>
+    <label for="indian rupees">Japan Yen</label><br><br>
+    <input type="number"  id="no4" placeholder="Japan Yen">
+    
+
+    <script>
+        function calculate()
+        {        
+         var IND = document.getElementById("no1").value;
+         var US = IND * 74.04;
+         var dubai = IND * 3.67;
+         var Japan = IND * 115.60;
+  
+         document.getElementById("no2").value = US;
+         document.getElementById("no3").value = dubai;
+         document.getElementById("no4").value = Japan;
+       
+        
+        }
+    </script>
+</body>
+</html>
